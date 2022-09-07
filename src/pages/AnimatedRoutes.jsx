@@ -1,25 +1,44 @@
-import React from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
-// import Home from "./Home";
-// import Contact from "./Contact";
-// import About from "./About";
-import { AnimatePresence } from "framer-motion";
-import Navbar from "../components/Navbar";
+import { useEffect, useState } from "react";
+import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
+ import '../styles/main.scss';
 
-function AnimatedRoutes() {
-  const location = useLocation();
+// Components
+import Loader from "../components/Loader";
+
+function Animate() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    loading
+      ? document.querySelector("body").classList.add("loading")
+      : document.querySelector("body").classList.remove("loading");
+  }, [loading]);
 
   return (
-    <AnimatePresence exitBeforeEnter>
-      <Routes key={location.pathname} location={location}>
-        <Navbar/>
-        {/* <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} /> */}
-      </Routes>
-    </AnimatePresence>
+    <AnimateSharedLayout type='crossfade'>
+      <AnimatePresence>
+        {loading ? (
+          <motion.div key='loader'>
+            <Loader setLoading={setLoading} />
+          </motion.div>
+        ) : (
+          <>
+
+            {!loading && (
+              <div className='transition-image final'>
+                <motion.img
+                  transition={{ ease: [0.6, 0.01, -0.05, 0.9], duration: 1.6 }}
+                  src={process.env.PUBLIC_URL + `/images/image-2.jpg`}
+                  layoutId='main-image-1'
+                />
+              </div>
+            )}
+          </>
+        )}
+      </AnimatePresence>
+    </AnimateSharedLayout>
+
   );
 }
 
-export default AnimatedRoutes;
+export default Animate;
