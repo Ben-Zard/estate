@@ -69,9 +69,9 @@ const BannerRowTop = ({ title }) => {
           delay: 0.4,
         }}
         className='row-col'>
-        <span className='row-message'>
+        <div className='row-message'>
          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt sed iusto odit. Magnam eius atque soluta commodi mollitia temporibus quis libero? Cum veritatis earum magnam, velit fuga dolorum maiores odit! 
-        </span>
+        </div>
       </motion.div>
     </div>
   );

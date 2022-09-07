@@ -36,8 +36,8 @@ function Navbar() {
               <a href='/contact'>MAIN</a>
             </div>
             <div className='hamburger-menu'>
-              <span>laroum</span>
-              <span>lo</span>
+              <span></span>
+              <span></span>
             </div>
           </div>
         </motion.div>
