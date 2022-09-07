@@ -3,44 +3,52 @@
   position: relative;
   display: grid;
 
+  margin: 0;
+
   .banner-row {
     overflow: hidden;
+    // background-color: bisque;
     grid-template-columns: repeat(8rem,4);
-    align-items: right;
+    align-items: left;
+    justify-items: left;
     @media (max-width: $layout-breakpoint-medium) {
       &:first-child {
         margin-top: 48px;
       }
     }
     &.center {
-      justify-content: right;
       text-align: right;
       .row-letter {
         left: 0;
       }
     }
     &.right {
-      justify-content: baseline;
+      justify-content: right;
+background-color: black;
     }
     .row-title,
     .row-letter {
-      font-size: 28rem;
+      font-size: 20rem;
       font-weight: 500;
       text-align: right;
       justify-items: end;
+      
       position: relative;
       letter-spacing: -0.8rem;
       display: inline-block;
       white-space: nowrap;
+      background-color: aquamarine;
       @media (max-width: $layout-breakpoint-xsmall) {
         font-size: 13rem;
       }
     }
     .row-col {
       width: 100%;
-      display: flex;
-      align-content: right;
-      justify-content: center;
+      margin-left: 2rem;
+      margin-right: 6rem;
+      display: grid;
+      align-content: left;
+      justify-content: left;
       @media (max-width: $layout-breakpoint-medium) {
         width: 70%;
       }
@@ -57,7 +65,10 @@
         font-weight: 500;
         font-size: 1.8rem;
         line-height: 2.6rem;
-        width: 320px;
+        width: 50%;
+        text-align: center;
+        margin-left:auto;
+        background-color: beige;
       }
     }
     .scroll {

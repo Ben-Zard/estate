@@ -4,6 +4,8 @@ import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
 
 // Components
 import Loader from "../components/Loader";
+import Banner from "../components/Banner";
+import Navbar from "../components/Navbar";
 
 function Animate() {
   const [loading, setLoading] = useState(true);
@@ -23,7 +25,8 @@ function Animate() {
           </motion.div>
         ) : (
           <>
-
+            <Navbar />
+            <Banner />
             {!loading && (
               <div className='transition-image final'>
                 <motion.img
