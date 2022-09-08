@@ -1,5 +1,6 @@
 import './styles/main.scss';
 import Navbar from "./components/Navbar";
+import Testimonial from "./components/Testimonial";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contact from './pages/Contact';
 import About from './pages/About';
@@ -11,6 +12,7 @@ function App() {
       <Routes>
       <Route path="/e" element={<Animate />} />
       <Route path="/" element={<Contact />} />
+      
       <Route path="/about" element={<About />} />
       </Routes>
     </BrowserRouter>
