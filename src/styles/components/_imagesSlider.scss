@@ -1,54 +1,66 @@
-
 // @import "node_modules/slick-carousel/slick/slick.css";
 // @import "node_modules/slick-carousel/slick/slick-theme.css";
 
 .image-slider-container {
-    position: relative;
-  }
-  
+  position: relative;
+}
+.image-slider-container h3 {
+  height: 160px;
+  text-align: left;
+  max-width: 575px;
+  z-index: 1000;
+  left: -120px;
+  top: -25%;
+  position: absolute;
+}
+
+@media only screen and (max-width: 1024px) {
   .image-slider-container h3 {
-    height: 160px;
-    text-align: left;
-    max-width: 575px;
-    z-index: 1000;
-    left: -120px;
-    top: -25%;
-    position: absolute;
+    top: -40%;
+    left: 20px;
   }
-  
-  @media only screen and (max-width: 1024px) {
-    .image-slider-container h3 {
-      top: -40%;
-      left: 20px;
-    }
-  }
-  
-  .image-slider .slick-list {
-    padding: 0 !important;
-  }
-  
-  .image-slider .slick-track {
-    margin-left: 40px;
-  }
-  
-  .image-slider .slick-slide img {
-    height: 600px;
-    width: 600px;
-    // cursor: url("./images/hand.png") pointer;
-  }
-  
+}
+
+.image-slider .slick-list {
+  padding: 0 !important;
+}
+
+.image-slider .slick-track {
+  margin-left: 40px;
+}
+
+.image-slider .slick-slide img {
+  height: 600px;
+  width: 600px;
+  // cursor: url("./images/hand.png") pointer;
+}
+
+.image-slide {
+  width: 600px;
+  height: 600px;
+}
+
+@media only screen and (max-width: 760px) {
   .image-slide {
-    width: 600px;
-    height: 600px;
+    width: 300px;
+    height: 300px;
   }
-  
-  @media only screen and (max-width: 760px) {
-    .image-slide {
-      width: 300px;
-      height: 300px;
-    }
+}
+
+.image-slider .slick-slide {
+  padding-right: 20px;
+}
+
+.containerT {
+  position: relative;
+  background-color: aqua;
+  .flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
-  
-  .image-slider .slick-slide {
-    padding-right: 20px;
+
+  .full {
+    // width: fit-content;
   }
+}

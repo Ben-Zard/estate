@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import ImageSlide from "./ImagesSlide";
-import { Parallax } from "react-scroll-parallax";
+import Image from "./Image";
+// import { Parallax } from "react-scroll-parallax";
 
-export default class Testimonial extends Component {
-  render() {
+ function Testimonial () {
     const settings = {
       infinite: false,
       variableWidth: true,
@@ -14,11 +14,11 @@ export default class Testimonial extends Component {
       dots: true,
       slidesToShow: 1,
       slidesToScroll: 1
-    };
+    }
     return (
-      <div className="container">
-        <div className="flex lg:justify-center">
-          <div className="w-full lg:w-6/12">
+      <div className="containerT">
+        <div className="flex ">
+          <div className="full ">
             <div className="image-slider-container">
               <h3>
                this is text
@@ -28,7 +28,7 @@ export default class Testimonial extends Component {
                   <ImageSlide />
                   <ImageSlide />
                   <ImageSlide />
-                  <ImageSlide />
+                  {/* <Image /> */}
                 </Slider>
               </div>
             </div>
@@ -36,5 +36,6 @@ export default class Testimonial extends Component {
         </div>
       </div>
     );
-  }
 }
+
+export default Testimonial; 
