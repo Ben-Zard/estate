@@ -1,14 +1,12 @@
 import React from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
-import Testimonial from "../components/Testimonial";
-import ImageSlider from "../components/Testimonial";
+import Testimonial from "../components/Portfoliopicture";
+
 
 function Test() {
 return (
-<div className=''>
+<React.Fragment>
         <Testimonial/>
-        <ImageSlider/>
-            </div>
+</React.Fragment>
 );
 }
  export default Test;

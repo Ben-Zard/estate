@@ -1,6 +1,6 @@
 import './styles/main.scss';
 import Navbar from "./components/Navbar";
-import Testimonial from "./components/Testimonial";
+import Testimonial from "./components/Portfoliopicture";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contact from './pages/Contact';
 import About from './pages/About';
