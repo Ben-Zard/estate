@@ -31,7 +31,7 @@ function Animate() {
               <div className='transition-image final'>
                 <motion.img
                   transition={{ ease: [0.6, 0.01, -0.05, 0.9], duration: 1.6 }}
-                  src={process.env.PUBLIC_URL + `/images/image-2.jpg`}
+                  src={process.env.PUBLIC_URL + `/images/One.jpg`}
                   layoutId='main-image-1'
                 />
               </div>
