@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {BrowserRouter, Link} from "react-router-dom";
+import Navlink from "./Navlink";
 function Navbar() {
 
       return (
@@ -32,13 +33,14 @@ function Navbar() {
                 <a href='/why'>5</a>
               </li>
             </nav>
-            <div className='contact'>
-              <a href='/contact'>MAIN</a>
+            {/* <div className='contact'> */}
+            <div>
+              <a><Navlink/></a>
             </div>
-            <div className='hamburger-menu'>
+            {/* <div className='hamburger-menu'>
+              <span><Navlink/></span>
               <span></span>
-              <span></span>
-            </div>
+            </div> */}
           </div>
         </motion.div>
       );

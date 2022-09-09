@@ -1,0 +1,59 @@
+// .body {
+//     background-color: #1a0554;
+//     font-family: "Roboto", sans-serif;
+//   }
+  
+  main {
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+  }
+//   main a{ text-align: start;}
+  aside {
+    background-color: #c4a8ff;
+    width: 18.75rem;
+    bottom: 0;
+text-align: right;
+height: 30vh;
+    border-radius: 0.5rem;
+    border: 8px solid black;
+  }
+  
+  .containernavlink {
+    margin: 4.5rem 1.4rem;
+  }
+  
+  .btn-container {
+    position: relative;
+    // margin-top: 50px;
+    vertical-align: top;
+    display: contents;
+    align-items: start;
+  }
+  
+  .container a {
+    color: #f9fafb;
+    text-decoration: none;
+    font-size: 1.75rem;
+    font-weight: 600;
+    display: block;
+    margin: 20px;
+  }
+  .container a:hover {
+    background-color: blanchedalmond;
+  }
+  button {
+    cursor: pointer;
+ margin: 1.25rem;
+    border: none;
+padding: 0.5rem 1rem;
+    background-color: #ff0f0f;
+    background-color: aqua;
+  }
+
+  .insidebutton{
+    margin-top: 50px;
+    top: 0;
+    text-align: start;
+    justify-content: flex-start;
+  }
