@@ -1,10 +1,10 @@
 import React from "react";
 
-function ImageSlide () {
+function ImageSlide ({src}) {
 
         return (
           <div className="image-slide">
-            { <img src="https://source.unsplash.com/random" width ="100%" alt="unsplash" /> }
+            { <img src={src} width="100%" /> }
           </div>
         );
       }
