@@ -29,6 +29,14 @@ export default function Testimonial() {
         loop
         className={styles.myswiper}
       >
+
+{/* can use this once get final json of photos 
+{  imageDisplay.map(img => { 
+   <SwiperSlide className={styles.swiperslide}>
+   <ImageSlide src ={img}/>
+   </SwiperSlide>
+        })
+} */}
         <SwiperSlide className={styles.swiperslide}>
         {/* Adding for space loading img  */}
         <ImageSlide src ={"https://images.unsplash.com/photo-1661123978240-456376a8cea3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY2MjY4NzE0OA&ixlib=rb-1.2.1&q=80&w=1080"}/>

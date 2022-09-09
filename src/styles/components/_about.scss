@@ -1,5 +1,20 @@
+
+.centerflex{
+    display: block;
+    height: 40vh;
 .containerImgSlide{
 width: 100%;
-height: 100%;
+height: 40vh !important;
 text-align: center;
+}
+.imgbelow{
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+    margin: auto;
+    display: block;
+    position:absolute;
+    font-weight: 900;
+}
+
 }

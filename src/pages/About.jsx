@@ -4,14 +4,17 @@ import Navbar from "../components/Navbar";
 import Testimonial from "../components/Portfoliopicture";
 
 function About() {
-return (
-<div className=''>
-    <Navbar/>
-              <div className = "containerImgSlide">
-                    <Testimonial />
-              </div>
-              <div><h1>Space</h1></div>  
-              </div>
-);
+  return (
+    <div className="centerflex">
+      <Navbar />
+
+      <div className="containerImgSlide">
+        <Testimonial className="containerImgSlide" />
+      </div>
+      <div className="imgbelow">
+        <h1>Space</h1>
+      </div>
+    </div>
+  );
 }
- export default About;
+export default About;

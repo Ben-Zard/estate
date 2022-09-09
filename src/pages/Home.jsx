@@ -2,13 +2,12 @@ import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
-import Testimonial from "../components/Portfoliopicture";
-function Contact() {
+import Animate from "../components/Hero";
+function Home() {
 return (
 <div className=''>
-    <Navbar/>
-    <Banner/>
+    <Animate/>
 </div>
 );
 }
- export default Contact;
+ export default Home;

@@ -3,9 +3,9 @@ import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
  import '../styles/main.scss';
 
 // Components
-import Loader from "../components/Loader";
-import Banner from "../components/Banner";
-import Navbar from "../components/Navbar";
+import Loader from "./Loader";
+import Banner from "./Banner";
+import Navbar from "./Navbar";
 
 function Animate() {
   const [loading, setLoading] = useState(true);
