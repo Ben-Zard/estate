@@ -1,13 +1,13 @@
-// .body {
+// body {
 //     background-color: #1a0554;
 //     font-family: "Roboto", sans-serif;
 //   }
 .containertt{
-    width: 25rem;  
+    width: 1rem;  
     z-index: 5;
 }
   main {
-    display: flex;
+    display: grid;
     text-align: start;
     margin-top: 5px;
     align-items: center;
@@ -31,9 +31,7 @@ height: 30vh;
   .btn-container {
     position: relative;
     // margin-top: 50px;
-    vertical-align: top;
-    display: contents;
-    align-items: start;
+    right: 50px;
   }
   
   .container a {
@@ -58,6 +56,7 @@ padding: 0.5rem 1rem;
   .insidebutton{
     // margin-top: 50px;
     top: 0;
-    text-align: start;
-    justify-content: flex-start;
+     text-align: start;
+    position: absolute;
+     justify-content: flex-end;
   }

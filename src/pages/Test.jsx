@@ -1,11 +1,11 @@
 import React from "react";
-import Testimonial from "../components/Portfoliopicture";
 
-
+import ImgCarousel from "../components/Imgcarousel";
 function Test() {
 return (
 <React.Fragment>
-        <Testimonial/>
+        <ImgCarousel/>
+ 
 </React.Fragment>
 );
 }

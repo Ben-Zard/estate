@@ -1,6 +1,4 @@
 import './styles/main.scss';
-import Navbar from "./components/Navbar";
-import Testimonial from "./components/Portfoliopicture";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contact from './pages/Contact';
 import About from './pages/About';
@@ -13,6 +11,7 @@ import Home from "./pages/Home"
 function App() {
   return (
     <BrowserRouter>
+ 
       <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/a" element={<Animate />} />

@@ -1,3 +1,5 @@
+.fixed{
+}
 .header {
     font-size: 1.8rem;
     height: 156px;
@@ -32,6 +34,7 @@
         @media (max-width: $layout-breakpoint-medium) {
           font-size: 3.2rem;
           flex: 4;
+          display: none;
         }
       }
       .nav {
@@ -71,12 +74,12 @@
       }
       .hamburger-menu {
         height: 56px;
+        position: fixed;
         width: 56px;
         border-radius: 100%;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
-        flex-direction: column;
         transition: 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
         cursor: pointer;
         &:hover {
@@ -90,8 +93,10 @@
           height: 3px;
           margin: 2px 0;
           background: $black;
-          display: block;
         }
+      }
+      @media (max-width: $layout-breakpoint-xsmall) {
+        opacity: 1;
       }
     }
   }
