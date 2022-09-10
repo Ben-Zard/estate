@@ -93,7 +93,6 @@ const BannerRowBottom = ({ title }) => {
             duration: 1,
             delay: 1.8,
           }}>
-          scroll
         </motion.span>
         <motion.span
           initial={{ opacity: 0 }}
@@ -103,7 +102,6 @@ const BannerRowBottom = ({ title }) => {
             duration: 1,
             delay: 1.8,
           }}>
-          down
         </motion.span>
       </motion.div>
       <AnimatedLetters title={title} />

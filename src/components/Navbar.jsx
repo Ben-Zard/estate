@@ -6,7 +6,7 @@ import Testnav from "./Testnav";
 function Navbar() {
 
       return (
-        <div className="fixed">
+        <div className="">
           <motion.div
             initial={{ opacity: 0, y: -180 }}
             animate={{ opacity: 1, y: 0 }}
@@ -17,8 +17,9 @@ function Navbar() {
               delay: 0.6,
             }}
             className='header'>
+            
+            <div className='fixed'><Testnav /></div>
             <div className='header-inner'>
-              <div className='logo'>Luram </div>
               <nav className='nav'>
               <li><Link to='/contact'>1</Link></li>
                 <li>
@@ -34,9 +35,6 @@ function Navbar() {
                   <a href='/why'>5</a>
                 </li>
               </nav>
-              <div className='hamburger-menu'>
-                <Testnav/>
-              </div>
             </div>
           </motion.div>
         </div>

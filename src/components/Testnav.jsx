@@ -44,7 +44,7 @@ export default function Testnav() {
       h="1vh"
       display="block"
       width= '1vh'
-      className="fixed"
+      className=""
     >
       <ChakraBox
           initial={{ opacity: 0, y: -180 }}
@@ -61,7 +61,7 @@ export default function Testnav() {
             aria-label="Options"
             icon={<HamburgerIcon />}
             variant={itemVariants}
-            className=""
+            className="fixed"
           />
 
           <MenuList className="">
