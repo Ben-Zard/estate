@@ -33,14 +33,9 @@ function Navbar() {
                 <a href='/why'>5</a>
               </li>
             </nav>
-            {/* <div className='contact'> */}
-            <div>
-              <a><Navlink/></a>
+            <div className='containertt'>
+            <Navlink/>
             </div>
-            {/* <div className='hamburger-menu'>
-              <span><Navlink/></span>
-              <span></span>
-            </div> */}
           </div>
         </motion.div>
       );

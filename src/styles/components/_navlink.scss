@@ -2,21 +2,26 @@
 //     background-color: #1a0554;
 //     font-family: "Roboto", sans-serif;
 //   }
-  
+.containertt{
+    width: 25rem;  
+    z-index: 5;
+}
   main {
     display: flex;
     text-align: start;
-    align-items: flex-start;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: flex-end;
   }
 //   main a{ text-align: start;}
   aside {
-    background-color: #c4a8ff;
-    width: 18.75rem;
-    bottom: 0;
+    background-color: #c5c5c5;
+    width: 8.75rem;
+ margin-top: 40px;
 text-align: right;
 height: 30vh;
     border-radius: 0.5rem;
-    border: 8px solid black;
+    border: 3px solid black;
   }
   
   .containernavlink {
@@ -40,19 +45,18 @@ height: 30vh;
     margin: 20px;
   }
   .container a:hover {
-    background-color: blanchedalmond;
+    background:linear-gradient(rgba(255, 255, 255, 0.329));
   }
   button {
     cursor: pointer;
  margin: 1.25rem;
     border: none;
 padding: 0.5rem 1rem;
-    background-color: #ff0f0f;
-    background-color: aqua;
+    background-color: rgb(0, 0, 0);
   }
 
   .insidebutton{
-    margin-top: 50px;
+    // margin-top: 50px;
     top: 0;
     text-align: start;
     justify-content: flex-start;

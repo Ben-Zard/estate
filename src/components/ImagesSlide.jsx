@@ -4,7 +4,7 @@ function ImageSlide ({src}) {
 
         return (
           <div className="image-slide">
-            { <img src={src} width="100%" /> }
+            { <img src={src} width = "100%" /> }
           </div>
         );
       }

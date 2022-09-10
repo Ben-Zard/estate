@@ -6,6 +6,9 @@
     padding-left:108px;
     padding-right: 0;
     color: $black;
+    position: sticky;
+    top: 0;
+    z-index: 500;
     @media (max-width: $layout-breakpoint-medium) {
       padding: 0 72px;
       font-size: 1.6rem;

@@ -1,11 +1,11 @@
 import React from "react";
-import NavLink from "../components/Navlink";
+import Testimonial from "../components/Portfoliopicture";
 
 
 function Test() {
 return (
 <React.Fragment>
-        <NavLink/>
+        <Testimonial/>
 </React.Fragment>
 );
 }
