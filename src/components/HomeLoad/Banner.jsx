@@ -31,9 +31,9 @@ const Banner = () => {
   }, []);
   return (
     <motion.div className='banner' variants={banner}>
-      <BannerRowTop title={"lorem"} />
-      <BannerRowCenter title={"lorem"} playMarquee={playMarquee} />
-      <BannerRowBottom title={"lorem"} />
+      <BannerRowTop title={"Jennifer"} />
+      <BannerRowCenter title={["forever "," "," home"]} playMarquee={playMarquee} />
+      <BannerRowBottom title={"Zardus"} />
     </motion.div>
   );
 };
@@ -69,9 +69,9 @@ const BannerRowTop = ({ title }) => {
           delay: 0.4,
         }}
         className='row-col'>
-        <div className='row-message'>
+        {/* <div className='row-message'>
          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt sed iusto odit. Magnam eius atque soluta commodi mollitia temporibus quis libero? Cum veritatis earum magnam, velit fuga dolorum maiores odit! 
-        </div>
+        </div> */}
       </motion.div>
     </div>
   );

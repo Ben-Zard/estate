@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
- import '../styles/main.scss';
+import '../../styles/main.scss';
 
 // Components
 import Loader from "./Loader";
 import Banner from "./Banner";
-import Navbar from "./Navbar";
+import Navbar from "../base/Navbar";
 
 function Animate() {
   const [loading, setLoading] = useState(true);
@@ -31,7 +31,7 @@ function Animate() {
               <div className='transition-image final'>
                 <motion.img
                   transition={{ ease: [0.6, 0.01, -0.05, 0.9], duration: 1.6 }}
-                  src={process.env.PUBLIC_URL + `/images/One.jpg`}
+                  src={process.env.PUBLIC_URL + `/images/one.jpg`}
                   layoutId='main-image-1'
                 />
               </div>

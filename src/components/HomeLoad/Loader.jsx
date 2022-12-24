@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 import Image from "./Image";
@@ -60,7 +59,7 @@ const Loader = ({ setLoading }) => {
         <motion.div variants={itemMain} className="transition-image">
           <motion.img
             layoutId="main-image-1"
-            src={process.env.PUBLIC_URL + `/images/One.jpg` }
+            src={process.env.PUBLIC_URL + `/images/one.jpg` }
           />
         </motion.div>
         <ImageBlock variants={item} id="image-3" />

@@ -1,12 +1,13 @@
-@import "abstracts/variables";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import "base/global";
 @import "base/reset";
 @import "base/typography";
 
 @import "components/Navbar";
-@import "components/About";
 @import "components/loader";
 @import "components/marquee";
 @import "components/banner";
-@import "components/imagesSlider"; 
-@import "components/navlink";
+
