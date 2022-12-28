@@ -32,7 +32,7 @@ function Navbar() {
                 <a href='/why'>5</a>
               </li>
             </nav>
-            <div className='contact bg-red-500'>
+            <div className='contact'>
               <a href='/contact'>MAIN</a>
             </div>
             <div className='hamburger-menu'>

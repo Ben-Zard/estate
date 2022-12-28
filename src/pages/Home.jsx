@@ -1,10 +1,10 @@
-import React from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
-import Hero from "../components/Hero";
+
+import Hero  from '../components/HomeLoad/Hero';
+
 function Home() {
 return (
 <div className=''>
-    <Hero/>
+<Hero/>
 </div>
 );
 }
